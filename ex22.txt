@@ -1,0 +1,44 @@
+#  = comment
+"" = string
+'' = string
+print = print to console
+, = enter afterwards
++ = add
+- = subtract
+* = multiply
+/ = divide
+% = mod
+= = set variable to this
+%s = format to string
+%d = format to signed decimal
+% variable = variable to format
+\n = new line in string
+""" """ multi-line string
+\t = tab in string
+\\ = backslash in string
+\* = asterisk in string
+raw_input() = whatever is entered at prompt
+from = module to reference
+import = thing to utilize
+sys = primary system python module
+argv = arguments module, arguments must be provided when py file is called on cmd line
+() = what function calls
+open() = opens file
+.read() = reads open file
+.truncate() = erases file contents
+.write() = writes to file
+.close() = close file, best practice
+os.path = system path module
+exists = return boolean True or False if a file exists
+len() = function that returns length of string
+def FUNCTIONNAME(local variables) = defines function, subsequent function lines are tabbed below
+*args = used when you are unsure how many variables need to be passed to function
+.seek() = used to reset file pointer, must be done to "rewind" back to beginning of file
++= = adds subsequent number to variable/number
+
+
+
+
+
+
+

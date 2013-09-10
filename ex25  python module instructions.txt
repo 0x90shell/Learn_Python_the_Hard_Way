@@ -1,0 +1,136 @@
+Let’s break this down line by line to make sure you know what’s going on:
+• Line 5 you import your ex25.py python file, just like other imports you have done. Notice you do not need to
+put the .py at the end to import it. When you do this you make a module that has all your functions in it to
+use.
+• Line 6 you made a sentence to work with.
+• Line 7 you use the ex25 module and call your first function ex25.break_words. The . (dot, period)
+symbol is how you tell python, “Hey, inside ex25 there’s a function called break_words and I want to run
+it.”
+64 Exercise 25: Even More Practice
+Learn Python The Hard Way, Release 2.0
+• Line 8 we just type words, and python will print out what’s in that variable (line 9). It looks weird but this is a
+list which you will learn about later.
+• Lines 10-11 we do the same thing with ex25.sort_words to get a sorted sentence.
+• Lines 13-16 we use ex25.print_first_word and ex25.print_last_word to get the first and last
+word printed out.
+• Line 17 is interesting. I made a mistake and typed the words variable as wrods so python gave me an error
+on Lines 18-20.
+• Line 21-22 is where we print the modified words list. Notice that since we printed the first and last one, those
+words are now missing.
+The remaining lines are for you to
+
+1 $ python
+2 Python 2.5.1 (r251:54863, Feb 6 2009, 19:02:12)
+3 [GCC 4.0.1 (Apple Inc. build 5465)] on darwin
+4 Type "help", "copyright", "credits" or "license" for more information.
+5 >>> import ex25
+6 >>> sentence = "All good things come to those who wait."
+7 >>> words = ex25.break_words(sentence)
+8 >>> words
+9 ['All', 'good', 'things', 'come', 'to', 'those', 'who', 'wait.']
+10 >>> sorted_words = ex25.sort_words(words)
+11 >>> sorted_words
+12 ['All', 'come', 'good', 'things', 'those', 'to', 'wait.', 'who']
+13 >>> ex25.print_first_word(words)
+14 All
+15 >>> ex25.print_last_word(words)
+16 wait.
+17 >>> wrods
+18 Traceback (most recent call last):
+19 File "<stdin>", line 1, in <module>
+20 NameError: name 'wrods' is not defined
+21 >>> words
+22 ['good', 'things', 'come', 'to', 'those', 'who']
+23 >>> ex25.print_first_word(sorted_words)
+24 All
+25 >>> ex25.print_last_word(sorted_words)
+26 who
+27 >>> sorted_words
+28 ['come', 'good', 'things', 'those', 'to', 'wait.']
+29 >>> sorted_words = ex25.sort_sentence(sentence)
+30 >>> sorted_words
+31 ['All', 'come', 'good', 'things', 'those', 'to', 'wait.', 'who']
+32 >>> ex25.print_first_and_last(sentence)
+33 All
+34 wait.
+35 >>> ex25.print_first_and_last_sorted(sentence)
+36 All
+37 who
+38 >>> ^D
+39 $
+
+
+Line 23 uses the unntouched sorted_words variable, which is itself a list
+Line 25 ditto
+Line 27 like words variable previously, sorted_words has lost the .pop()ed words
+LIne 29 reload sorted_words with sort_sentence
+Also note if you don't break() words up before calling sort(), sort() will separate by character.
+rinse and repeat
+
+Also note:
+>>> print_first_and_last(sentence)
+All
+wait.
+>>> print_first_and_last_sorted(sentence)
+All
+who
+>>> sentence
+'All good things come to those who wait.'
+>>>
+
+sentence does not lose words, as the break()-based variable(word and sorted_words)
+
+
+
+
+
+Notice how you get help for your module, and how the help is those odd """ strings you put after each function in ex25? Those special strings are called documentation comments and we’ll be seeing more of them.
+
+>>> help(ex25)
+Help on module ex25:
+
+NAME
+    ex25
+
+FILE
+    c:\users\overflow\my code\lpthw\course\ex25.py
+
+FUNCTIONS
+    break_words(stuff)
+        This function will break up words for us.
+
+    print_first_and_last(sentence)
+        prints the first and last words of the sentence.
+
+    print_first_and_last_sorted(sentence)
+        Sorts the words then prints the first and last one.
+
+    print_first_word(words)
+        Prints the first word after popping it off.
+
+    print_last_word(words)
+        Prints the last word after popping it off.
+
+    sort_sentence(sentence)
+        Takes in a full sentence and returns the sorted words.
+
+    sort_words(words)
+        Sorts the words.
+		
+>>> help(ex25.break_words)
+Help on function break_words in module ex25:
+
+break_words(stuff)
+    This function will break up words for us.
+	
+Typing ex25. is annoying. A shortcut is to do your import like this: from ex25 import * which is like
+saying, “Import everything from ex25.”
+
+>>> from ex25 import *
+>>> break_words
+<function break_words at 0x02872530>
+>>> help(break_words)
+Help on function break_words in module ex25:
+
+break_words(stuff)
+    This function will break up words for us.

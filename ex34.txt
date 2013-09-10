@@ -1,0 +1,13 @@
+#ordinal number = 1, 2, 3, 4, etc
+#cardinal number = 0, 1, 2, 3, etc
+#Remember: ordinal == ordered, 1st; cardinal == cards at random, 0.
+
+1. The animal at 1 is python, and it is the first animal.
+2. The third animal is peacock, and it is located at 2.
+3. The first animal is bear, and it is located at 0.
+4. The animal at 3 is kangaroo, and it is the fourth animal.
+5. The fifth animal is whale, and it is located at 4.
+6. The animal at 2 is peacock, and it is the third animal.
+7. The sixth animal is platypus, and it is located at 5.
+8. The animal at 4 is whale, and it is the fifth animal.
+
