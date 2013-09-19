@@ -1,0 +1,278 @@
+Keywords
+• and
+m: both conditions must be true
+a: boolean operat
+• del
+m: delete
+a: delete element from list . eg : del a[9]
+• from
+m:which module to pull from
+a: from library to import
+• not
+m:not true
+a: Negates a boolean value.
+• while
+m:run while condition is true
+a: Begins a while loop
+• as
+m:?
+a: Importing a package/module as a certain name.
+• elif
+m:after initial if statement is used, else if is used until final else is called
+
+• global
+m:global variable
+a: Must be used before a variable is assigned.  Once used it 
+              pushes the variable to the global namespace
+
+• or
+m:either condition is true
+
+• with
+m:?
+a:  Allows you to wrap a piece of code with enter and exit
+              operations that are gaurenteed to run.  Opening a file is a
+              good example.  When using with, <obj>.__enter__ and
+              <obj>.__exit__ are run.
+              Ex.  with open("x.txt") as f
+                       data = f.read()
+                       // do stuff
+              Can replace try/catch/finally statements.
+              Lots of possibilities.
+
+• assert
+m:?
+a: The assert statement/function exists in mostly every other programming language out there. When you do...
+
+assert a_condition
+... you're telling the program to test that condition, and abort as if a fatal error had occured (or raise an exception, or whatever) if the condition is false.
+
+In Python, it's roughly equivalent to something like:
+
+if not condition:
+    raise AssertionError("condition failed")
+
+• else
+m:final close to if/else
+
+• if
+m:if condition is true, do this
+
+• pass
+m:?
+a: Does nothing.  A null statement that can be used as a place
+              holder in your code.
+
+• yield
+m:?
+a:used to create generators, complex shit
+http://stackoverflow.com/questions/231767/the-python-yield-keyword-explained
+
+• break
+m: pause?
+a: Breaks out of the closest for or while loop.
+>>> for n in range(2, 10):
+...     for x in range(2, n):
+...         if n % x == 0:
+...            print n, 'equals', x, '*', n/x
+...            break
+...     else:
+...          print n, 'is a prime number'
+
+• except
+m:everything but this
+a: Exception handling.
+	try:
+		how_much = int(raw_input("> "))
+	except ValueError:
+		dead("Man, learn to type a number.")
+		
+• import
+m: reference other python module
+
+• print
+m: print text to terminal
+
+• class
+m:?
+a:creates classes
+
+• exec
+m:execute?
+a:Executes Python statements stored in a string.
+              ex. exec 'print "Hello"'
+              eval evaluates valid Python expressions which are stored
+              in a string.
+              Know the difference between statements and expressions.
+              ex. eval('3*3')   is going to be 9
+
+• in
+m: used to test condition in variable
+a: Comparison operator that tests for set membership.
+              3 in [3, 4, 5] == True
+			  
+• raise
+m:increase?
+a:Exception handling.  Raises an exception.
+
+• continue
+m:keep going down line?
+a:Skips the rest of the instructions in a loop and continue
+              with the next iteration of the loop.
+
+• finally
+m:?
+a:Exception handling.  In a try/catch/finally statement
+              the block under finally will always execute regardless
+              of what exceptino is raised or if an exception is raised
+              at all.
+
+• is
+m:?
+a: Comparison operator that checks to see if two objects
+              are the same instance.
+
+• return
+m: return results to be used
+a:Used in functions to return a value.
+              When no return expression is specified (ex. return)
+              return None is substituted.
+
+• def
+m: start a function
+a:Used for defining functions and methods.
+
+• for
+m:used in for statement
+a:Used to begin a for loop.
+
+• lambda
+m:math?
+a:Simply put, Python lambda allows functions to be defined in-line without a name.
+
+• try
+m:attempt?
+a:Exception handling.  Begins a try/catch block.
+
+Data Types
+
+For data types, write out what makes up each one. For example, with strings write out how you create a string. For numbers write out a few numbers.
+
+• True = Boolean True
+• False =Boolean True
+• None = None type
+• strings = "blah", "wahtever"
+• numbers = 3, 3e10, -3
+• floats = 3.04, -4.3
+• lists = [1,2,3,4] ["something", 3, "else"]
+
+String Escapes Sequences
+
+For string escape sequences, use them in strings to make sure they do what you think they do.
+
+• \\ = backslash
+• \’ = apostrophe or single quote
+• \" = comma or double quote
+• \a = ASCII Bell (sound)
+• \b = ASCII backspace
+• \f = ASCII formfeed
+• \n = ASCII linefeed (newline)
+• \r = ASCII carraige return (ENTER)
+• \t = ASCII Tab
+• \v = ASCII Vertical Tab
+
+String Formats
+
+Same thing for string formats: use them in some strings to know what they do.
+
+• %d = signed integer decimal
+• %i = signed interger decimal
+• %o = signed octal
+• %u = obsolete identical to d
+• %x = signed hexadecimal (lowercase)
+• %X = signed hexadecimal (uppercase)
+• %e = floating point exponential (lowercase)
+• %E = floating point exponential (uppercase)
+• %f = floating point decimal format
+• %F = floating point decimal format
+• %g = Floating point format. Uses lowercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise.
+• %G = Floating point format. Uses uppercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise.
+• %c = Single character (accepts integer or single character string).
+• %r = String (converts any Python object using repr()).
+• %s = String (converts any Python object using str()).
+• %% = No argument is converted, results in a '%' character in the result.
+
+Operators
+
+Some of these may be unfamiliar to you, but look them up anyway. Find out what they do, and if you still can’t figure
+it out, save it for later.
+
+• + = addtion (x + y = sum of x and y)
+• - = subtraction (x +y = difference of x and y)
+• * = multiply (x * y = product of x and y)
+• ** = exponent (x ** y = x to the power of y)
+• / = division (x * y = product of x and y)
+• // = floored division (x.05 // y.03 = product of x and y (z.811) floored (z)) 
+• % = modulo (x/y = remainder of product of x/y)
+• < = less than
+• > = greater than 
+• <= less than or equal to
+• >= greater than or equal to
+
+String Formats 
+
+• == equality comparison
+• != inequality comparison
+• <> = inequality comparison
+• ( ) = tuples
+• [ ] = lists or arrays
+• { } = dictionary
+• @ = decorators http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/
+• , = assignment operator ( >>> a, b = 5+4, 5 >>> print a, b >>> 9 5)
+• : = slice notation ( word = HelpA; >>> word[4] 'A', >>> word[0:2] 'He', >>> word[2:4] 'lp')
+• . add functions to (variable.upper())
+• = equals ( a = 12, print a displays 12)
+• ; separator; not terminator (timeit a = 5; a*a)
+• += plus in-place (c += a is equivalent to c = c + a)
+• -= minus in-place (c -= a is equivalent to c = c - a)
+• *= multiply in-place (c *= a is equivalent to c = c * a)
+• /= divide in-place (c /= a is equivalent to c = c / a)
+• //= floor division in-place (c //= a is equivalent to c = c // a)
+• %= modulo in-place (c %= a is equivalent to c = c % a)
+• **= exponent in-place (c **= a is equivalent to c = c ** a)
+
+Bitwise Operator	
+	
+Bitwise operator works on bits and perform bit by bit operation. Assume if a = 60; and b = 13; Now in binary format they will be as follows:
+
+a = 0011 1100
+
+b = 0000 1101
+
+-----------------
+
+a&b = 0000 1100
+
+a|b = 0011 1101
+
+a^b = 0011 0001
+
+~a  = 1100 0011
+	
+&	 Binary AND Operator copies a bit to the result if it exists in both operands.	 
+	(a & b) will give 12 which is 0000 1100
+	
+|	 Binary OR Operator copies a bit if it exists in eather operand.
+	 (a | b) will give 61 which is 0011 1101
+	 
+^	 Binary XOR Operator copies the bit if it is set in one operand but not both.	 
+	(a ^ b) will give 49 which is 0011 0001
+
+~	 Binary Ones Complement Operator is unary and has the efect of 'flipping' bits.	 
+	(~a ) will give -61 which is 1100 0011 in 2's complement form due to a signed binary number.
+
+<<	 Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand.	 
+	a << 2 will give 240 which is 1111 0000
+
+>>	 Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand.	 
+	a >> 2 will give 15 which is 0000 1111
