@@ -2,6 +2,7 @@ class Song(object):
 	
 	#self is required variable for class
 	#this is to distinguish between instance and local variables
+	#second argument is turned into a local variable within class instance
 	def __init__(self, lyrics):
 		self.lyrics = lyrics
 		
